@@ -13,8 +13,6 @@ create table contacts(
 );
 '''
 
-
-
 # Database Config
 db_config = {
     'user': '',
