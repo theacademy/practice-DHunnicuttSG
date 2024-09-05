@@ -1,4 +1,5 @@
 import mysql.connector
+# pip install mysql-connector-python
 
 # sql code for creating your db
 '''
