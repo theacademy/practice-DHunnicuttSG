@@ -1,5 +1,20 @@
 import mysql.connector
 
+# sql code for creating your db
+'''
+create database contactList2;
+use contactList2;
+
+create table contacts(
+	id int primary key auto_increment,
+    fullName varchar(255),
+    phone varchar(15),
+    email varchar(100)
+);
+'''
+
+
+
 # Database Config
 db_config = {
     'user': '',
