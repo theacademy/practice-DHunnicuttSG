@@ -16,10 +16,10 @@ create table contacts(
 
 # Database Config
 db_config = {
-    'user': '',
-    'password': '',
-    'host': '',
-    'database': ''
+    'user': 'root',
+    'password': 'RootRoot',
+    'host': 'localhost', # 127.0.0.1
+    'database': 'contactlist2'
 }
 
 class Contact:
@@ -34,16 +34,27 @@ class Contact:
 
 class ContactList:
     def __init__(self):
-        #
-        #
+        self.conn = mysql.connector.connect(**db_config)
+        self.cursor = self.conn.cursor(dictionary=True)
         self.contacts = []
 
 
     def create_contact(self, fullName, phone, email):
-        pass
+        sql = "insert into contacts(fullName, phone, email) values(%s, %s, %s)"
+        self.cursor.execute(sql, (fullName, phone, email))
+        self.conn.commit()
+        new_contact = Contact(self.cursor.lastrowid, fullName, phone, email)
+        self.contacts.append(new_contact)
+        print("Contact added successfully.")
 
     def read_contacts(self):
-        pass
+        self.cursor.execute("Select * from contacts")
+        self.contacts = self.cursor.fetchall()
+        if not self.contacts:
+            print("No contacts found.")
+        else:
+            for contact in self.contacts:
+                print(contact)
 
     def update_contact(self, contact_id, new_fullName=None, new_phone=None, new_email=None):
         pass
