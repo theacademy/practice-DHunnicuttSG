@@ -1,0 +1,47 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>DVD Library</title>
+    <style>
+        .container {
+            display: grid;
+            grid-template-columns: 1fr 1fr;
+            gap: 10px;
+        }
+        .column {
+            padding: 10px;
+        }
+        .column:first-child {
+            background-color: #f0f0f0;
+        }
+        .column:last-child {
+            background-color: #d0d0d0;
+        }
+    </style>
+</head>
+<body>
+    <h2>Add a New DVD</h2>
+    <form id="dvdForm" class="container">
+        <div class="column">
+            <p><label for="title">Title:</label></p>
+            <p><label for="releaseYear">Release Year:</label></p>
+            <p><label for="rating">Rating:</label></p>
+            <p><label for="director">Director:</label></p>
+            <p><label for="notes">Notes:</label></p>
+        </div>
+        <div class="column">
+            <p><input type="text" id="title" name="title" placeholder="Title" required></p>
+            <p><input type="text" id="releaseYear" name="releaseYear" placeholder="Release Year" required></p>
+            <p><input type="text" id="rating" name="rating" placeholder="Rating" required></p>
+            <p><input type="text" id="director" name="director" placeholder="Director" required></p>
+            <p><textarea id="notes" name="notes" placeholder="Notes"></textarea></p>
+        </div>
+
+        <button type="submit">Add DVD</button>
+        
+    </form>
+</body>
+<script src="app.js"></script>
+</html>
