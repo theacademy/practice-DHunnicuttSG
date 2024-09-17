@@ -22,6 +22,8 @@ deactivate.bat
 To install Django
 ```
 python -m pip install Django
+# mac
+python3 -m pip install Django
 ```
 
 ## Create a Django Project
