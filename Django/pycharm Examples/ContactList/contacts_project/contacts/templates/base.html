@@ -6,6 +6,14 @@
     <title>{% block title %}Contacts App{% endblock %}</title>
     {% load static %}
     <link rel="stylesheet" href="{% static 'css/styles.css' %}">
+    <style>
+        .scrollable-form {
+            max-height: 300px; /* Adjust height as needed */
+            overflow-y: auto;
+            border: 1px solid #ccc;
+            padding: 10px;
+        }
+    </style>
 </head>
 <body>
     <header>
@@ -19,8 +27,7 @@
         {% block content %}{% endblock %}
     </main>
     <footer>
-        <p>©2024 Contacts App</p>
-        <p>C398 Cohort 09/24</p>
+        <p>©2024 Contacts App - C398 Cohort 09/24</p>
     </footer>
 </body>
 </html>
