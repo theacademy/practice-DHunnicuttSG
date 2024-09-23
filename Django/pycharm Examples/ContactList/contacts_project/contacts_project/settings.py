@@ -81,6 +81,18 @@ DATABASES = {
     }
 }
 
+# Connect to mySQL database 
+# create DB in mysql then run migrations to update app
+# DATABASES = {
+#     'default': {
+#         'ENGINE': 'django.db.backends.mysql',
+#         'NAME': 'djangoContacts',
+#         'USER': 'root',
+#         'PASSWORD': 'RootRoot',
+#         'HOST': 'localhost',
+#         'PORT': '3306',
+#     }
+# }
 
 # Password validation
 # https://docs.djangoproject.com/en/5.0/ref/settings/#auth-password-validators
