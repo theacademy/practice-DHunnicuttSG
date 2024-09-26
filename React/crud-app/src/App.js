@@ -1,18 +1,18 @@
 // import './App.css';
-import CreateContact from './components/create';
-import ReadContacts from './components/Read';
-import UpdateContact from './components/Update';
-import DeleteContact from './components/Delete';
+//import CreateContact from './components/create';
+import ReadContacts from './components/hooks/ReadData';
+//import UpdateContact from './components/Update';
+//import DeleteContact from './components/Delete';
 
 function App() {
   return (
     <div className="App">
-      <CreateContact />
+      {/* <CreateContact />
       <hr/>
       <UpdateContact />
       <hr/>
       <DeleteContact/>
-      <hr/>
+      <hr/> */}
       <ReadContacts/>
     </div>
   );
