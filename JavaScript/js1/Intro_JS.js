@@ -22,21 +22,24 @@ Strings are written inside double or single quotes. Numbers are written without 
 If you put a number in quotes, it will be treated as a text string.
 */
 
-w = "17"
-var x = 10;
-let y = 11;
-const z = "David"
+// w = "17"
+// var x = 10;
+// let y = 11;
+// const z = "David"
 
-// Displaying Data
+// // Displaying Data
 
-document.getElementById("display").innerHTML = `
-<p> w = ${w} </p> 
-<p> x = ${x} </p>
-<p> y = ${y} </p>
-<p> z = ${z} </p>
-`;
+// document.getElementById("display").innerHTML = `
+// <p> w = ${w} </p> 
+// <p> x = ${x} </p>
+// <p> y = ${y} </p>
+// <p> z = ${z} </p>
+// `;
 
-console.log(w, x, y, z)
+// console.log(w, x, y, z)
 
 //  A variable declared without a value will have the value undefined.
-
+document.body.innerHTML = "<div id='test'>Hello</div>"
+let elem = document.getElementById('test');
+elem.innerHTML = 'World';
+console.log(document.body.innerHTML);
