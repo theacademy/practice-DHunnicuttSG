@@ -1,5 +1,5 @@
 import unittest
-from FizzBuzz import fizzbuzz
+from Python.Testing_Python.FizzBuzz import fizzbuzz
 
 class TestFizzBuzz(unittest.TestCase):
     def test_fizzbuzz(self):
