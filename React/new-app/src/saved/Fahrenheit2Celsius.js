@@ -5,7 +5,7 @@ function F2C() {
     const [celsius, setCelsius] = useState('')
 
     const convertToCelsius = (f) => {
-        return (f -32) * 5 / 9;
+        return (f - 32) * 5 / 9;
     }
 
     const handleChange = (e) => {
