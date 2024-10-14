@@ -1,6 +1,6 @@
 ## Presentation Instructions
 
-Required slide:
+Required slides:
 1. Introduction
 2. Project Goals
 3. App Demo
