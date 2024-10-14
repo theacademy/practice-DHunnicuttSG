@@ -10,5 +10,7 @@ Required slides:
 Presentation should be no longer than 20 minutes.  You do not need to show code unless specifically asked. 
 
 Backend - Python, Django
+
 Frontend - React
+
 Database - SQLite, MySQL
