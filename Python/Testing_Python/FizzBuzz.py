@@ -9,8 +9,9 @@ def fizzbuzz(number):
         return str(number)
     
 if __name__ == "__main__":
-    number = int (input('Enter a number: '))
-    result = fizzbuzz(number)
-    print(result)
+    # number = int (input('Enter a number: '))
+    for number in range(100):
+        result = fizzbuzz(number)
+        print(result)
     
     
